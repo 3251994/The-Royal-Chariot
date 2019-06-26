@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+body{
+	font-family: 'Indie Flower', cursive;
+	background:url("../images/Coverpage.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-width: 100%;
+  min-height: 100%;
+	
+	
+
+}
+h1.subtitle{
+	font-size: 100px;
+	font-family: Old English Text MT; 
+	font-weight: 1000;  
+	
+}
+h2.title {
+	font-size: 150px;
+	font-family: Old English Text MT; 
+	font-weight: 1000;
+	
+	
+}
+h1{
+	font-weight: 400;
+	font-size:2.5rem;
+	text-transform:uppercase;
+	margin:0;
+}
+
+h2{
+	font-weight:400;
+	font-size:1.2rem;
+	text-transform:capitalize;
+	margin:0;
+}
+
+img{
+	display:block;
+	width: 100%;
+	
+}
+
+main{
+	
+	max-width:1300px;
+	margin:auto;
+}
+
+#landing {
+	background-image:url("../images/Coverpage.png");
+	background-repeat:no-repeat;
+}
+
+#landing-text{
+	display: flex;
+	flex: 0 1 40vw;
+	height: 50vh;
+	justify-content:center;
+	align-items: center;
+	text-align:center;
+	padding-right:1rem;
+	padding-left:1rem;
+	
+}
+
+#landing-text h2{
+	color: #888;
+}
+
+
+.btn {
+	padding:0.5rem 2rem;
+	border: 2px #ccc solid;
+	display: inline-block;
+	margin : 2rem 0 0 ;
+	border-radius: 50px;
+	text-decoration :none;
+	color: white;
+	transition: background 500ms ease;
+}
+
+.btn:hover{
+	background: black;
+}
+#header{
+	padding: 1.5rem;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+#header h2{
+	border-left:dotted 1px #fff;
+	border-right: dotted 1px #ffff;
+	display: inline-block;
+	padding-right:1rem;
+	padding-left:1rem;
+}
+
+.caption{
+	padding: 0.8rem;
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: auto;
+	color: white;
+	
+}
+
+footer h3{
+	font-size: 3rem;
+	margin-bottom: 0;
+}
+
+/*Screen Sizes 500px an up*/
+
+@media(min-width:500px){
+	#landing{
+		height: 100%;
+		
+	}
+	
+	#landing-text{
+		height: 100vh;
+		
+	}
+	#landing-image{
+		height: 100vh;
+		
+	}
+}
+
+
+@media(min-width: 700px){
+	.btn{
+		padding: 1rem 3rem;
+	}
+}
+
+
