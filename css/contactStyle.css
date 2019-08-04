@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Romanesco&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montaga&display=swap');
-	
+
 body{
 	font-family: 'Indie Flower', cursive;
 	background:url("../images/Coverpage.png") no-repeat center center fixed;
@@ -9,19 +8,22 @@ body{
 	-moz-background-size: cover;
 	background-size: cover;
 	min-width: 100%;
-	min-height: 100%;
+  min-height: 100%;
+	
+	
+
 }
 
-h1.subtitle{
-	font-family: Old English Text MT;
-	font-size:100px;
+h1{
+	font-weight: 400;
+	font-size:2.5rem;
 	text-transform:uppercase;
 	margin:0;
 }
 
-h2.title{
-	font-family: Old English Text MT;
-	font-size:100px;
+h2{
+	font-weight:400;
+	font-size:1.2rem;
 	text-transform:capitalize;
 	margin:0;
 }
@@ -44,9 +46,9 @@ main{
 }
 
 #landing-text{
-	display: flex;
-	flex: 0 1 40vw;
-	height: 30vh;
+	/* display: flex;
+	flex: 0 1 0vw;
+	height: 10vh; */
 	justify-content:center;
 	align-items: center;
 	text-align:center;
@@ -75,19 +77,18 @@ main{
 	background: black;
 }
 #header{
-	padding: 1rem;
+	padding: 1.5rem;
 	text-align: center;
-	/*background: #333;*/
+	background: #333;
 	color: #fff;
 }
 #header h2{
-	font-size: 50px;
-	/* border-left:dotted 5px #fff; */
-	/* border-right: dotted 5px #ffff; */
+	font-size: 30px;
+	border-left:dotted 1px #fff;
+	border-right: dotted 1px #ffff;
 	display: inline-block;
-	text-decoration:underline;
-	padding-right:10rem;
-	padding-left:10rem;
+	padding-right:1rem;
+	padding-left:1rem;
 }
 
 .caption{
@@ -95,52 +96,77 @@ main{
 	text-align: center;
 }
 
-.w-content,
-.w-auto{margin-left:10%;margin-right:10%; margin-bottom:10%}.w-content{
-	margin-top:%;max-width:100%}.w-auto{max-width:55%}
-
-.w-display-container:hover 
-.w-display-hover{display:block}
-.w-display-container:hover 
-span.w-display-hover{display:inline-block}
-.w-display-container{
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+.container p, address{
+	color:white;
+	font-size:20px;
+}
+.dark{
+	padding:10px;
+	background:#d65915;
+	color:white;
+	margin-top:5px;
+	margin-bottom:50px;
+	margin-right:px;
+	margin-left: 10px;
+	border-radius:30px;
 	border-style: double;
-	background-color: white;
-	border-width: 7px;
-	border-color: black;
-	position:relative;
-	}
-
-.w-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
-.w-button:hover{color:#000!important;background-color:#ccc!important}
-.w-button:first-child,.w-dropdown-click:hover > .w-button:first-child{background-color:#ccc;color:#000}
-
-
-.w-black,.w-hover-black:hover{color:#fff!important;background-color:#000!important}
-
-.w-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-
-.w-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
-
-.slideshow-container {
-  max-width: 100%;
-  position: center;
-  border-style: double;
-  background-color: white;
   border-width: 7px;
-  border-color: black;
-} 
-
-.video {
-	max-width:100%;
-	margin-top:3%;
-	position: center;
-	border-style: double;
-	background-color: white;
-	border-width: 7px;
-	border-color: black;
+  border-color: yellow;
+	
 }
 
+.dark h1{
+	color:black;
+}
+/*sidebar*/
+
+aside#sidebar{
+	float:right;
+	margin-top:10px;
+}
+
+aside#sidebar .feedback input, aside#sidebar .feedback textarea{
+	width:50%;
+	padding:10px;
+}
+/*Article*/
+
+article#main-col{
+	top:70%;
+	left:100%;
+	float:right;
+	width:100%;
+}
+
+/*sidebar*/
+
+aside#sidebar{
+	float:right;
+	width:30%;
+	margin-top:10px;
+}
+
+aside#sidebar .feedback input{
+	width:90%;
+	padding:5px;
+}
+
+aside#sidebar .feedback textarea
+{
+	width:90%;
+	padding:5px;
+}
+/*Article*/
+
+article#main-col{
+	float:left;
+	width:65%;
+}
 footer{
 	text-align: center;
 	padding: 2rem 1rem;
@@ -149,7 +175,7 @@ footer{
 	
 }
 .fa {
-  padding: 30px;
+  padding: 20px;
   font-size: 30px;
   width: 30px;
   text-align: center;
@@ -187,7 +213,6 @@ footer{
   background: #bb0000;
   color: white;
 }
-
 .fa-instagram {
   background: #125688;
   color: white;
@@ -199,9 +224,11 @@ footer h3{
 }
 
 /*Screen Sizes 500px an up*/
+
 @media(min-width:500px){
 	#landing{
-		height: 100%;	
+		height: 100%;
+		
 	}
 	
 	#landing-text{
@@ -212,6 +239,7 @@ footer h3{
 		height: 100vh;
 		
 	}
+	
 }
 
 
@@ -220,11 +248,5 @@ footer h3{
 		padding: 1rem 3rem;
 	}
 }
-
-
-
-
-
-
 
 
