@@ -10,128 +10,26 @@
 </head>
 <body>
 	<main>
-		<div id="landing">
-			<div id="landing-text">
-				<div id="landing-text-inner">
-				<h1 class="subtitle"><font color = "white" >The</font></h1>
-				<h2 class="title"><font color = "white">Royal chariot</font></h2>
-				<a href="#" class="btn" id="view-work">
+	
+		<nav>
+			<section class="nav-container">
+				<aside class="logo"><img src="images/title.png">
+				</aside>
+			</section>
+		</nav>
+		
+		<center><div>
+			<a href="#" class="btn" id="view-work">
 				    Home
-				</a>
-				<a href="aboutus.html" class="btn" id="view-work">
-				    About Us
-				</a>
-				<a href="services.html" class="btn" id="view-work">
-				    Services
-				</a>
-				<a href="contactus.html" class="btn" id="view-work">
+			</a>
+			<a href="contactus.html" class="btn" id="view-work">
 				    Contact Us
-				</a>
-				</div>
-			</div>
-			<!-- <div id="landing-image"></div> -->
-		</div>
+			</a>
+				
+				<h1 class="subtitle"><font color = "white" >The Royal Chariot</font></h1>
+				
+		</div></center>
 		
-		<div id="home">
-			<div class="caption">
-				<div id="header">
-				<h2>Popular destinations in Kerala</h2>
-			</div>
-			<div class="w-content w-display-container">
-				<img class="slideShow" src="./images/popular_1.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_2.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_3.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_4.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_5.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_6.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_7.jpg" style="width:100%">
-				<img class="slideShow" src="./images/popular_8.jpg" style="width:100%">
-
-				<button class="w-button w-black w-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="w-button w-black w-display-right" onclick="plusDivs(1)">&#10095;</button>
-			</div>
-
-	<script>
-		var slideIndex = 1;
-		showDivs(slideIndex);
-
-	function plusDivs(n) {
-	showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("slideShow");
-		if (n > x.length) {slideIndex = 1}
-			if (n < 1) {slideIndex = x.length}
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none";  
-			}
-		x[slideIndex-1].style.display = "block";  
-	}
-
-	</script>
-				<p></p>
-		</div>
-		</div>
-		
-		<div id="aboutus">
-			<div class="caption">
-				<div id="header">
-				<h2>Popular destinations in Karnataka</h2>
-			    </div>
-				<div class="slideshow-container">
-
-							<div class="mySlides fade">
-								
-									<img src="./images/popular_4.jpg" style="width:100%">
-									
-							</div>
-
-							<div class="mySlides fade">
-								
-									<img src="./images/popular_5.jpg" style="width:100%">
-									
-							</div>
-
-							<div class="mySlides fade">
-						
-								<img src="./images/popular_6.jpg" style="width:100%">
-								
-							</div>
-
-				</div>
-				<br>
-
-				<div style="text-align:center">
-					<span class="dot"></span> 
-					<span class="dot"></span> 
-					<span class="dot"></span> 
-				</div>
-	<script>
-		var slideIndex = 0;
-		showSlides();
-
-	function showSlides() {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";  
-		}
-		slideIndex++;
-		if (slideIndex > slides.length) {slideIndex = 1}    
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		slides[slideIndex-1].style.display = "block";  
-		dots[slideIndex-1].className += " active";
-		setTimeout(showSlides, 1000); 
-		}
-	</script>
-				<p></p>
-			</div>
-		</div>
 			
 		<div class="service">	
 			<div class="caption">
@@ -169,11 +67,6 @@
 		</p>
 		
 	</footer>
-	
-	<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
   
   <script src="js/main.js"></script>
 </body>
